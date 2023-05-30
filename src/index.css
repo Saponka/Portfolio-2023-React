@@ -11,3 +11,124 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik, calibri, sans-serif;
+  }
+  /* navbar */
+  #navItems{
+    display: flex;
+    align-items: center;
+  }
+ /* //banner y callout */
+#banner{
+  /* height: 330px; */
+  margin: 20px;
+ }
+ .divNombre{
+  display: grid;
+  grid-template-rows:  1fr 0fr;
+  justify-items: center;
+  align-items: center;
+ }
+.nombre{
+   color: rgb(0, 0, 0);
+   margin: 30px;
+   font-size: 7rem;
+  font-family: 'Splash';
+   -webkit-text-stroke: 0.5px black;
+}
+.subtitulo{
+ color: rgb(0, 0, 0);
+ font-size: 2rem;
+ font-family: 'Splash';
+}
+ #foto img{
+  width: 200px;
+  border-radius: 5%;
+   
+ }
+ .descripcion{
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+
+ }
+ .boton:hover{
+  background-color: red;
+}
+/* projectos */
+
+  #portfolio h2{
+    
+      font-family: 'Dawning of a New Day';
+      font-size: 3rem;
+    
+  }
+   .portfolio-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 530px;
+    margin: auto auto 1rem;
+    text-decoration: none;
+    color: rgba(255, 251, 7, 0); 
+  }
+   .portfolio-item .caption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0);
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    z-index: 1;  
+  }
+  @media (min-width: 992px) {
+    .portfolio-item {
+      max-width: none;
+      .caption .caption-content{
+        color: #DADCE0;
+      }
+    }
+    .portfolio-item .caption {
+      transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out, background-color 0.7s;
+      transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(0px);
+              clip-path: inset(0px);
+    }
+    .portfolio-item .caption .caption-content {
+      color: rgba(0, 0, 0, 0);
+      transition: opacity 0.25s;
+      margin: auto;
+      font-weight: 300;
+      font-size: 1.7rem;
+     
+       
+    }
+    .portfolio-item img {
+      transition: -webkit-clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(-1px);
+              clip-path: inset(-1px);
+    }
+    .portfolio-item:hover img {
+      -webkit-clip-path: inset(2rem);
+              clip-path: inset(2rem);
+    }
+    .portfolio-item:hover .caption {
+      background-color: rgba(29, 128, 159, 0.9);
+      -webkit-clip-path: inset(2rem);
+              clip-path: inset(2rem);
+              .caption-content {
+                color: rgb(6, 0, 0);
+                
+              }
+            
+    }
+  }
