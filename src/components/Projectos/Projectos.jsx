@@ -1,15 +1,30 @@
 import React from 'react';
 import weather from "../../assets/Img/proyectos/weather channel.png";
+import toDoList from "../../assets/Img/proyectos/Lista de Tareas.png";
+import colorGame from "../../assets/Img/proyectos/colorete.png";
+import aVenture from "../../assets/Img/proyectos/a-venture.png";
+import resto from "../../assets/Img/proyectos/resto.png";
+import comix from "../../assets/Img/proyectos/comixZoom.png";
+import vinoRojo from "../../assets/Img/proyectos/vinoRojo.png";
+import typer from "../../assets/Img/proyectos/typer3000.png";
+import bonzai from "../../assets/Img/proyectos/bonzayTek.png";
+import videoGames from "../../assets/Img/proyectos/videoGames.png";
 
 const Projectos = () => {
   return (
     <div>
+          <section class="content-section  text-center" >
+       {/*  <img src="https://i.makeagif.com/media/6-19-2017/CPX3Jc.gif" alt=""></img> */}
+        <div class=" px-4 px-lg-5 text-center" id="callout">
+            <h1  class="mx-auto mb-5">
+                Bienvenido a <br/> 
+                Mis Proyectos  
+            </h1>  
+        </div>
+    </section>
       <section className="content-section p-5" id="portfolio">
         <div className="container px-4 px-lg-5">
-            <div className="content-section-heading text-center">
-                
-                <h2 className="mb-5" >Proyectos</h2>
-            </div>
+            
             <div className="row ">
                 <div className="col-lg-6">
                     <a className="portfolio-item link-dark" target="blank" href="https://saponka.github.io/weather-channel/">
@@ -30,7 +45,7 @@ const Projectos = () => {
                                 <p className="mb-0">Lista de Tareas</p>
                             </div>
                         </div>
-                        <img className="img-fluid" src="./img/proyectos/Lista de Tareas.png" alt="..." />
+                        <img className="img-fluid" src={toDoList} alt="..." />
                     </a>
                 </div>
 
@@ -42,7 +57,7 @@ const Projectos = () => {
                                 <p className="mb-0">Adivina el Color RGB </p>
                             </div>
                         </div>
-                        <img className="img-fluid" src="./img/proyectos/colorete.png" alt="..." />
+                        <img className="img-fluid" src={colorGame} alt="..." />
                     </a>
                 </div>
                 <div className="col-lg-6">
@@ -53,7 +68,7 @@ const Projectos = () => {
                                 <p className="mb-0">Elige tu Propia Aventura</p>
                             </div>
                         </div>
-                        <img className="img-fluid" src="./img/proyectos/a-venture.png" alt="..." />
+                        <img className="img-fluid" src={aVenture} alt="..." />
                     </a>
                 </div>
                 <div className="col-lg-6">
@@ -64,7 +79,7 @@ const Projectos = () => {
                                 <p className="mb-0">Theme Page de Restaurant</p>
                             </div>
                         </div>
-                        <img className="img-fluid" src="./img/proyectos/resto.png" alt="..." />
+                        <img className="img-fluid" src={resto} alt="..." />
                     </a>
                 </div>
                 <div className="col-lg-6">
@@ -75,7 +90,7 @@ const Projectos = () => {
                                 <p className="mb-0">Fan Page de Comics</p>
                             </div>
                         </div>
-                        <img className="img-fluid" src="./img/proyectos/comixZoom.png" alt="..." />
+                        <img className="img-fluid" src={comix} alt="..." />
                     </a>
                 </div>
                 </div>
@@ -84,9 +99,9 @@ const Projectos = () => {
 
     <section className="content-section p-5" id="portfolio">
         <div className="container px-4 px-lg-5">
-            <div className="content-section-heading text-center">
+            <div className="content-section-heading text-center " id='callout'>
                 
-                <h2 className="mb-5">Proyectos Recientes</h2>
+                <h1  className="mb-5">Proyectos Recientes</h1>
             </div>
             <div className="row ">
                 <div className="col-lg-6">
@@ -97,7 +112,7 @@ const Projectos = () => {
                                 <p className="mb-0">Juego de Tiempo y Palabras</p>
                             </div>
                         </div>
-                        <img className="img-fluid" src="./img/proyectos/typer3000.png" alt="..." />
+                        <img className="img-fluid" src={typer} alt="..." />
                     </a>
                 </div>
                 <div className="col-lg-6">
@@ -109,7 +124,7 @@ const Projectos = () => {
                                 <p className="mb-0">Mongo Express React NodeJs</p>
                             </div>
                         </div>
-                        <img className="img-fluid " src="./img/proyectos/bonzayTek.png" alt="..." />
+                        <img className="img-fluid " src={bonzai} alt="..." />
                     </a>
                 </div>
          
@@ -123,7 +138,7 @@ const Projectos = () => {
                                 <p className="mb-0">Postgres React NodeJs Express</p>
                             </div>
                         </div>
-                        <img className="img-fluid" src="./img/proyectos/videoGames.png" alt="..." />
+                        <img className="img-fluid" src={videoGames} alt="..." />
                     </a>
                 </div>
          
@@ -136,7 +151,7 @@ const Projectos = () => {
                                 <p className="mb-0">Mongo Express React NodeJs</p>
                             </div>
                         </div>
-                        <img className="img-fluid" src="./img/proyectos/vinoRojo.png" alt="..." />
+                        <img className="img-fluid" src={vinoRojo} alt="..." />
                     </a>
                 </div>
             </div>
@@ -146,4 +161,4 @@ const Projectos = () => {
   )
 }
 
-export default Projectos
+export default Projectos;
