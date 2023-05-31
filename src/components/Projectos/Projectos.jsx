@@ -1,5 +1,5 @@
 import React from 'react';
-import weather from "../../assets/Img/proyectos/weather channel.png";
+/* import weather from "../../assets/Img/proyectos/weather channel.png";
 import toDoList from "../../assets/Img/proyectos/Lista de Tareas.png";
 import colorGame from "../../assets/Img/proyectos/colorete.png";
 import aVenture from "../../assets/Img/proyectos/a-venture.png";
@@ -8,25 +8,43 @@ import comix from "../../assets/Img/proyectos/comixZoom.png";
 import vinoRojo from "../../assets/Img/proyectos/vinoRojo.png";
 import typer from "../../assets/Img/proyectos/typer3000.png";
 import bonzai from "../../assets/Img/proyectos/bonzayTek.png";
-import videoGames from "../../assets/Img/proyectos/videoGames.png";
+import videoGames from "../../assets/Img/proyectos/videoGames.png"; */
+
+
+import itemData from "../../assets/Data/projectData.js"
 
 const Projectos = () => {
   return (
     <div>
-          <section class="content-section  text-center" >
+          <section className="content-section  text-center" >
        {/*  <img src="https://i.makeagif.com/media/6-19-2017/CPX3Jc.gif" alt=""></img> */}
-        <div class=" px-4 px-lg-5 text-center" id="callout">
-            <h1  class="mx-auto mb-5">
+        <div className=" px-4 px-lg-5 text-center" id="callout">
+            <h1  className="mx-auto mb-5">
                 Bienvenido a <br/> 
                 Mis Proyectos  
             </h1>  
         </div>
     </section>
+
       <section className="content-section p-5" id="portfolio">
         <div className="container px-4 px-lg-5">
+            <div className="row " >
             
-            <div className="row ">
-                <div className="col-lg-6">
+            {itemData.items.map((project,id)=>(
+               <div className="col-lg-6" key={id} >
+                   <a className="portfolio-item link-dark" target="blank" href="https://saponka.github.io/weather-channel/">
+                        <div className="caption">
+                             <div className="caption-content " >
+                                 <div className="h2" >{project.name}</div>
+                                    <p className="mb-0 " >{project.description}</p>
+                            </div>
+                       </div>
+                       <img className="img-fluid" src={project.img} alt="..." />
+                  </a>
+               </div>
+               
+            ))}
+               {/*  <div className="col-lg-6">
                     <a className="portfolio-item link-dark" target="blank" href="https://saponka.github.io/weather-channel/">
                         <div className="caption">
                             <div className="caption-content ">
@@ -92,11 +110,11 @@ const Projectos = () => {
                         </div>
                         <img className="img-fluid" src={comix} alt="..." />
                     </a>
+                </div> */}
                 </div>
-                </div>
-                </div>
+                </div>    
     </section>
-
+{/* 
     <section className="content-section p-5" id="portfolio">
         <div className="container px-4 px-lg-5">
             <div className="content-section-heading text-center " id='callout'>
@@ -156,7 +174,7 @@ const Projectos = () => {
                 </div>
             </div>
         </div>
-    </section>       
+    </section>    */}    
     </div>
   )
 }
