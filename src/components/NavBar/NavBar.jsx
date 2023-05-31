@@ -1,67 +1,125 @@
-import React from 'react'
+import React from 'react';
+import { styled } from '@mui/material/styles';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
+
+
+const MaterialUISwitch = styled(Switch)(({ theme }) => ({
+  width: 62,
+  height: 34,
+  padding: 7,
+  '& .MuiSwitch-switchBase': {
+    margin: 1,
+    padding: 0,
+    transform: 'translateX(6px)',
+    '&.Mui-checked': {
+      color: '#fff',
+      transform: 'translateX(22px)',
+      '& .MuiSwitch-thumb:before': {
+        backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
+          '#fff',
+        )}" d="M4.2 2.5l-.7 1.8-1.8.7 1.8.7.7 1.8.6-1.8L6.7 5l-1.9-.7-.6-1.8zm15 8.3a6.7 6.7 0 11-6.6-6.6 5.8 5.8 0 006.6 6.6z"/></svg>')`,
+      },
+      '& + .MuiSwitch-track': {
+        opacity: 1,
+        backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
+      },
+    },
+  },
+  '& .MuiSwitch-thumb': {
+    backgroundColor: theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
+    width: 32,
+    height: 32,
+    '&:before': {
+      content: "''",
+      position: 'absolute',
+      width: '100%',
+      height: '100%',
+      left: 0,
+      top: 0,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
+        '#fff',
+      )}" d="M9.305 1.667V3.75h1.389V1.667h-1.39zm-4.707 1.95l-.982.982L5.09 6.072l.982-.982-1.473-1.473zm10.802 0L13.927 5.09l.982.982 1.473-1.473-.982-.982zM10 5.139a4.872 4.872 0 00-4.862 4.86A4.872 4.872 0 0010 14.862 4.872 4.872 0 0014.86 10 4.872 4.872 0 0010 5.139zm0 1.389A3.462 3.462 0 0113.471 10a3.462 3.462 0 01-3.473 3.472A3.462 3.462 0 016.527 10 3.462 3.462 0 0110 6.528zM1.665 9.305v1.39h2.083v-1.39H1.666zm14.583 0v1.39h2.084v-1.39h-2.084zM5.09 13.928L3.616 15.4l.982.982 1.473-1.473-.982-.982zm9.82 0l-.982.982 1.473 1.473.982-.982-1.473-1.473zM9.305 16.25v2.083h1.389V16.25h-1.39z"/></svg>')`,
+    },
+  },
+  '& .MuiSwitch-track': {
+    opacity: 1,
+    backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
+    borderRadius: 20 / 2,
+  },
+}));
+
 
 const NavBar = () => {
   return (
     <>
-    <html class="has-navbar-fixed-top"></html>
-      <nav class="navbar is-transparent is-fixed-top">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="">
+    
+      <nav className="navbar is-transparent is-fixed-top">
+  <div className="navbar-brand">
+    <a className="navbar-item" href="">
       <img src="https://bulma.io/images/bulma-logo.png" alt="" width="112" height="28"></img>
     </a>
-    <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+    <div className="navbar-burger" data-target="navbarExampleTransparentExample">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </div>
 
-  <div id="navbarExampleTransparentExample" class="navbar-menu">
-    <div class="navbar-start " id='navItems'>
-      <a /* class="navbar-item " */ class="bd-tw-button button" href="/" style={{textDecoration:"none",marginRight:"10px"}}>
-        Home
-      </a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link bd-tw-button button" style={{textDecoration:"none"}}>
+  <div id="navbarExampleTransparentExample" className="navbar-menu">
+    <div className="navbar-start " id='navItems'>
+      
+      <div className="navbar-item has-dropdown is-hoverable">
+        <a className="navbar-link bd-tw-button button" style={{textDecoration:"none"}}>
           Projectos
         </a>
-        <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/" style={{textDecoration: "none"}}>
+        <div className="navbar-dropdown is-boxed">
+          <a className="navbar-item" href="https://bulma.io/documentation/overview/start/" style={{textDecoration: "none"}}>
             Vino Rojo Bodegon
           </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/" style={{textDecoration: "none"}}>
+          <a className="navbar-item" href="https://bulma.io/documentation/overview/modifiers/" style={{textDecoration: "none"}}>
             Games API
           </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/" style={{textDecoration: "none"}}>
+          <a className="navbar-item" href="https://bulma.io/documentation/columns/basics/" style={{textDecoration: "none"}}>
             Color Game
           </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/layout/container/" style={{textDecoration: "none"}}>
+          <a className="navbar-item" href="https://bulma.io/documentation/layout/container/" style={{textDecoration: "none"}}>
             Typer 3000
           </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/form/general/" style={{textDecoration: "none"}}>
+          <a className="navbar-item" href="https://bulma.io/documentation/form/general/" style={{textDecoration: "none"}}>
             Weather API
           </a>
-          <hr class="navbar-divider" />
-          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/" style={{textDecoration: "none"}}>
+          <hr className="navbar-divider" />
+          <a className="navbar-item" href="https://bulma.io/documentation/elements/box/" style={{textDecoration: "none"}}>
           Lista de Tareas
           </a>
-          <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/" style={{textDecoration: "none"}}>
+          <a className="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/" style={{textDecoration: "none"}}>
             Comix Zoom
           </a>
-          <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/" style={{textDecoration: "none"}}>
+          <a className="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/" style={{textDecoration: "none"}}>
             Bonzai ZenTek
           </a>
         </div>
+       
       </div>
+      <FormGroup>
+      <FormControlLabel
+        control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked className='ligth' />}
+       /*  label="Dark Mode" */
+      />
+    </FormGroup>
     </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="field is-grouped">
-          <p class="control">
-            <a class="bd-tw-button button" data-social-network="Github" data-social-action="github" data-social-target="https://github.com" target="_blank" href="https://github.com/Saponka" style={{textDecoration: "none"}}>
-              <span class="icon">
-              <i class="fa-brands fa-github fa-xl"   ></i>
+     
+    <div className="navbar-end">
+      <div className="navbar-item">
+        <div className="field is-grouped">
+          <p className="control">
+            <a className="bd-tw-button button" data-social-network="Github" data-social-action="github" data-social-target="https://github.com" target="_blank" href="https://github.com/Saponka" style={{textDecoration: "none"}}>
+              <span className="icon">
+              <i className="fa-brands fa-github fa-xl"   ></i>
             
               </span>
               <span>
@@ -69,10 +127,10 @@ const NavBar = () => {
               </span>
             </a>
           </p>
-          <p class="control">
-            <a class="button is-danger" href="https://github.com/jgthms/bulma/releases/download/0.9.4/bulma-0.9.4.zip" style={{textDecoration: "none"}}>
-              <span class="icon">
-                <i class="fas fa-download"></i>
+          <p className="control">
+            <a className="button is-danger" href="https://github.com/jgthms/bulma/releases/download/0.9.4/bulma-0.9.4.zip" style={{textDecoration: "none"}}>
+              <span className="icon">
+                <i className="fas fa-download"></i>
               </span>
               <span>Download CV</span>
             </a>
