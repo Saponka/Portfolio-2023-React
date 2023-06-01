@@ -35,8 +35,23 @@ code {
     border-radius: 10px;
     width: 30px;
 }
+.social{
+  display: flex;
+  justify-content: space-around;
+}
+.social a{
+  background-color: rgb(6, 6, 6);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social a:hover{
+  background-color: #11af8d;
+}
 
- /* //banner y callout */
+ /* //banner */
 #banner{
   display: grid;
   grid-template-columns: 70% 30%;
@@ -56,7 +71,7 @@ code {
  color: rgb(120, 21, 233);
  font-size: 30px;
  font-family: 'Teko';
- /* -webkit-text-stroke: 0.5px #000000; */
+ 
 };
 
 /* mediaquery titulo */
@@ -91,10 +106,10 @@ code {
 
  .descripcion{
   color: rgb(120, 21, 233);
-  font-size: 30px;
-  font-family: "Teko";
-  /* -webkit-text-stroke: 0.1px rgb(31 244 185); */
+  font-size: 22px;
+  font-family: "Zen Dots";/* Teko */
  }
+
  .boton:hover{
   background-color: red;
 }
@@ -102,8 +117,8 @@ code {
 
 #callout h1{
 color:rgb(11, 250, 238);
-font-family: "Splash";
-font-size: 3rem;
+font-family: "Zen Dots";
+font-size: 2rem;
 -webkit-text-stroke: 0.5px rgb(147, 2, 244);
 }
 
@@ -116,6 +131,8 @@ font-size: 3rem;
     text-decoration: none;
     color: rgba(255, 251, 7, 0);
     border-radius: 10px; 
+     box-shadow:  5px 1px 10px rgb(11, 250, 238);
+
   }
    .portfolio-item .caption {
     display: flex;
@@ -159,13 +176,14 @@ font-size: 3rem;
     .portfolio-item:hover img {
       -webkit-clip-path: inset(2rem);
               clip-path: inset(2rem);
+
               
     }
     .portfolio-item:hover .caption  {
-      background-color: rgba(12, 222, 205, 0.9);
+      background-color: rgb(11, 250, 238);
       
       -webkit-clip-path: inset(2rem);
-              clip-path: inset(2rem);
+              clip-path: outset(2rem);/* ojo */
                
             }
             .portfolio-item:hover .caption .caption-content {
@@ -173,4 +191,48 @@ font-size: 3rem;
    
             }
           
-          }
+  }
+  /* Experiencia */
+  #services h2{
+    color:rgb(11, 250, 238);
+font-family: "Zen Dots";
+font-size: 2rem;
+-webkit-text-stroke: 0.5px rgb(147, 2, 244);
+  }
+/* contacto */
+#contacto{
+  color:rgb(147, 2, 244);
+  font-family: "Splash";
+  font-size: 3rem;
+  /* -webkit-text-stroke: 0.1px rgb(11, 250, 238); */
+}
+ .boton2{
+  font-weight: bold;
+  font-family: "Zen Dots";
+ }         
+/* footer */
+footer.footer {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  background-color: #000000;
+}
+footer.footer .social-link {
+  display: block;
+  text-decoration: none;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #11af8d;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+footer.footer .social-link:hover {
+  background-color: #9e17bc;
+  text-decoration: none;
+}
+#foot {
+  font-family:'Libre Barcode 128 Text' ;
+   font-size: 3rem;
+   color: white;
+}
