@@ -1,21 +1,14 @@
 import React from 'react';
-
 //imports cv
 import resume from "../../assets/Data/FrancoResume.pdf";
 import qr from "../../assets/Img/FrancoResume.png"
-//qr code antdesign
-import { QRCode, Space, theme } from 'antd';
-const { useToken } = theme;
+
 
 const NavBar = () => {
 
-  //const { token } = useToken();
-  //const size = 84;
-
   return (
     <>
-      {/* <!-- Navigation--> */}
-      <nav className="navbar navbar-dark bg-dark  fixed-top">
+      <nav className="navbar navbar-dark fixed-top" style={{boxShadow: "5px 0px 15px #00BCD4",backgroundColor:"black"}}>
         <div className="container-fluid">
           <a className="navbar-brand " href="#"></a>
           <button
@@ -32,21 +25,21 @@ const NavBar = () => {
             tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
+            style={{boxShadow: "-3px 0px 10px #00BCD4"}}
           >
             <div className="offcanvas-header">
-              {/* <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Franco Herrera Ruiz</h5>  */}
-
-              <button
+               <button
                 type="button"
                 className="btn-close text-reset"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
-              ></button>
+               ></button>
             </div>
             <div className="offcanvas-body">
-              <ul className="navbar-nav justify-content-end  pe-3">
-                <li className="nav-item">
-                  <div id="capa">
+                <ul className="navbar-nav justify-content-end  pe-3">
+                    <li className="nav-item">
+                  {/* darkmode */}
+                  {/* <div id="capa">
                     <div className="controls">
                       <button className="ligth">
                         <svg
@@ -77,86 +70,82 @@ const NavBar = () => {
                       </button>
                       <span> Dark Mode</span>
                     </div>
-                  </div>
+                  </div> */}
                 </li>
-                <br />
-
+                <br/>
+                <div className="container px-4 px-lg-5 mb-2 social">
+                    <a
+                      className=" rounded-circle text-white "
+                      target="blank"
+                      href="https://www.instagram.com/frankoherreraruiz/?hl=es-la"
+                    >
+                      <i className="icon-social-instagram"></i>
+                    </a>
+                    <a
+                      className="rounded-circle text-white "
+                      target="blank"
+                      href="https://www.linkedin.com/feed/"
+                    >
+                      <i className="icon-social-linkedin"></i>
+                    </a>
+                    <a
+                      className=" rounded-circle text-white"
+                      target="_blank"
+                      href="https://github.com/Saponka"
+                    >
+                      <i className="icon-social-github"></i>
+                    </a>
+                </div>
+                 <br />
                 <li className="nav-item dropdown">
-                  <a
+                   <a
                     className="nav-link dropdown-toggle"
                     href="#portfolio"
                     id="offcanvasNavbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                  >
+                   >
                     Proyectos
-                  </a>
-                  <ul
-                    className="dropdown-menu dropdown-menu-dark"
-                    aria-labelledby="offcanvasNavbarDropdown"
-                  >
+                   </a>
+                   <ul className="dropdown-menu dropdown-menu-dark"aria-labelledby="offcanvasNavbarDropdown">
                     <li>
-                      <a
-                        className="dropdown-item"
-                        href="https://saponka.github.io/ColorGame/"
-                      >
+                      <a className="dropdown-item" href="https://saponka.github.io/ColorGame/" target='_blank' >
                         Color Game
                       </a>
                     </li>
                     <li>
-                      <a
-                        className="dropdown-item"
-                        href="https://saponka.github.io/weather-channel/"
-                      >
+                      <a className="dropdown-item"href="https://saponka.github.io/weather-channel/" target='_blank'>
                         Weather Channel
                       </a>
                     </li>
                     <li>
-                      <a
-                        className="dropdown-item"
-                        href="https://comixzoom.herokuapp.com/"
-                      >
+                      <a className="dropdown-item"href="https://comixzoom.herokuapp.com/" target='_blank'>
                         ComixZoom
                       </a>
                     </li>
                     <li>
-                      <a
-                        className="dropdown-item"
-                        href="https://saponka.github.io/ListaTareas/"
-                      >
+                      <a className="dropdown-item"href="https://saponka.github.io/ListaTareas/" target='_blank'>
                         Lista de Tareas
                       </a>
                     </li>
                     <li>
-                      <a
-                        className="dropdown-item"
-                        href="https://typer3000.vercel.app/"
-                      >
+                      <a className="dropdown-item"href="https://typer3000.vercel.app/" target='_blank'>
                         Typer 3000
                       </a>
                     </li>
                     <li>
-                      <a
-                        className="dropdown-item"
-                        href="https://video-games-delta.vercel.app/"
-                      >
+                      <a className="dropdown-item" href="https://video-games-delta.vercel.app/" target='_blank'>
                         Video Games
                       </a>
                     </li>
                     <li>
-                      <a
-                        className="dropdown-item"
-                        href="https://vino-rojo-bodegon.vercel.app/"
-                      >
+                      <a className="dropdown-item" href="https://vino-rojo-bodegon.vercel.app/" target='_blank'>
                         Vino Rojo
                       </a>
                     </li>
                     <li>
-                      <a
-                        className="dropdown-item"
-                        href="https://final-react-front.vercel.app/"
-                      >
+                      <a className="dropdown-item"href="https://final-react-front.vercel.app/" target='_blank'>
                         Bonzai Tek
                       </a>
                     </li>
@@ -192,16 +181,7 @@ const NavBar = () => {
                   </li>
                   <li className="nav-item">
                     <p> or Download CV with QR</p>
-                    <img src={qr} alt="" width={110} />
-                {/* <Space>
-                  <QRCode
-                    value="https://github.com/Saponka"
-                    color={token.colorInfoText}
-                    bgColor={token.colorBgLayout}
-                    size={size}
-                    icon=''
-                  />
-                </Space> */}
+                    <img src={qr} alt="" width={150} />
                   </li>
                 </ul>
               </div>
