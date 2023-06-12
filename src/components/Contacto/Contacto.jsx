@@ -1,4 +1,5 @@
 import React from 'react';
+import "./contacto.css";
 
 const Contacto = () => {
   return (
@@ -7,7 +8,7 @@ const Contacto = () => {
         <div className="container px-4 px-lg-5 text-center">
             <h2 id='contacto' className="mb-4" >Gracias por visitar mi portfolio...</h2>
            
-            <a className="btn btn-lg btn-outline-info boton2" href="#AcercaDeMi">Acerca de mi!</a>
+            <a className="btn  boton2" href="#banner">Acerca de mi!</a>{/* btn-lg btn-outline-info */}
         </div>
     </section>
     </>
