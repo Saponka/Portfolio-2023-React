@@ -70,8 +70,10 @@
         .portfolio-item:hover .caption  {
           background-color: rgb(182, 11, 250);
           
-          -webkit-clip-path: inset(2rem);
-                  clip-path: outset(2rem);/* ojo */
+          -webkit-opacity: inset(2rem);
+                  opacity: outset(2rem);    /* ojo */
+          /* -webkit-clip-path: inset(2rem);
+                  clip-path: outset(2rem); */    /* ojo */
                    
                 }
                 .portfolio-item:hover .caption .caption-content {
