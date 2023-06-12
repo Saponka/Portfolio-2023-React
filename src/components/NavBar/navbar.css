@@ -1,0 +1,36 @@
+.offcanvas{
+    background-color: #5c258d;;
+  }
+
+  .controls  .ligth {
+    display: none; 
+    border-radius: 10px; 
+    width: 30px;
+}
+.controls  .dark {
+    background-color :"black";
+    color:"white";
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 30px;
+}
+.social{
+  display: flex;
+  justify-content: space-around;
+}
+.social a{
+  background-color: rgb(6, 6, 6);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.social a i {
+  margin-top: 2px;
+}
+
+.fecha{
+  color:aqua;
+}
