@@ -1,0 +1,79 @@
+
+#callout h1{
+    color:rgb(11, 250, 238);
+    font-family: "Zen Dots";
+    font-size: 2rem;
+    -webkit-text-stroke: 0.5px rgb(147, 2, 244);
+    }
+    
+       .portfolio-item {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        max-width: 530px;
+        margin: auto auto 1rem;
+        text-decoration: none;
+        color: rgba(255, 251, 7, 0);
+        border-radius: 10px; 
+         box-shadow:  5px 1px 10px rgb(11, 250, 238);
+         box-shadow: rgba(179, 46, 240, 0.4) -5px 5px, rgba(179, 46, 240, 0.3) -10px 10px, rgba(179, 46, 240, 0.2) -15px 15px, rgba(179, 46, 240, 0.1) -20px 20px, rgba(179, 46, 240, 0.05) -25px 25px;
+      }
+
+       .portfolio-item .caption {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(33, 37, 41, 0);
+        position: absolute; 
+        top: 0; 
+        bottom: 0; 
+        z-index: 1;  
+       
+      }
+    
+      @media (min-width: 592px) {
+        .portfolio-item {
+          max-width: none;
+        }
+        .caption .caption-content{
+          color: #0d0d0d;
+        }
+        .portfolio-item .caption {
+          transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+          transition: clip-path 0.25s ease-out, background-color 0.7s;
+          transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+          -webkit-clip-path: inset(0px);
+                  clip-path: inset(0px);
+        }
+        .portfolio-item .caption .caption-content  {
+          color: rgba(0, 0, 0, 0);
+          transition: opacity 0.25s;
+          margin: auto;
+          font-size: 1rem;    
+        }
+        .portfolio-item img {
+         /*  transition: -webkit-opacity 0.25s ease-in-out; */
+          transition:  opacity 0.3s ease-in-out;
+          transition:  opacity 0.3s ease-in-out, /* -webkit-opacity 0.25s ease-in-out */;
+         /*  -webkit-opacity: inset(-1px); */
+                  opacity: inset(-1px);
+        }
+        .portfolio-item:hover img {
+         /*  -webkit-opacity: inset(2rem); */
+          opacity: inset(2rem);
+    
+                  
+        }
+        .portfolio-item:hover .caption  {
+          background-color: rgb(182, 11, 250);
+          
+          -webkit-clip-path: inset(2rem);
+                  clip-path: outset(2rem);/* ojo */
+                   
+                }
+                .portfolio-item:hover .caption .caption-content {
+                  color: rgb(6, 0, 0);
+       
+                }
+              
+      }
