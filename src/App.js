@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
 import Projectos from './components/Projectos/Projectos';
+import 'animate.css';
 
 function App() {
   return (
