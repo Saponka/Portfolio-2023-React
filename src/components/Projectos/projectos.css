@@ -7,9 +7,6 @@
     -webkit-text-stroke: 0.5px rgb(147, 2, 244);
     
     }
-   
-    
-    
 
     
        .portfolio-item {
@@ -58,14 +55,14 @@
           font-size: 1rem;    
         }
         .portfolio-item img {
-         /*  transition: -webkit-opacity 0.25s ease-in-out; */
+          transition: -webkit-opacity 0.25s ease-in-out;
           transition:  opacity 0.3s ease-in-out;
-          transition:  opacity 0.3s ease-in-out, /* -webkit-opacity 0.25s ease-in-out */;
-         /*  -webkit-opacity: inset(-1px); */
+          transition:  opacity 0.3s ease-in-out, -webkit-opacity 0.25s ease-in-out;
+          -webkit-opacity: inset(-1px);
                   opacity: inset(-1px);
         }
         .portfolio-item:hover img {
-         /*  -webkit-opacity: inset(2rem); */
+          -webkit-opacity: inset(2rem);
           opacity: inset(2rem);
     
                   
