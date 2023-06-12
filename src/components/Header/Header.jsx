@@ -1,5 +1,6 @@
 import React from "react";
 import perfil from "../../assets/Img/perfil.png";
+import "./header.css";
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
           </h2>
         </div>
         <div id="foto" style={{ display: "flex" }}>
-          <img src={perfil} alt=""></img>
+          <img id="imgfoto" src={perfil} alt=""></img>
         </div>
         <br />
       </div>
