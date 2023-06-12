@@ -1,4 +1,5 @@
 import React from 'react';
+import "./projectos.css";
 import itemData from "../../assets/Data/projectData.js";
 
 const Projectos = () => {
@@ -16,7 +17,7 @@ const Projectos = () => {
         <div className="container px-4 px-lg-5">
               <div className="row " >
                    {itemData.items.map((project,id)=>(
-                 <div className="col-lg-6" key={id} >
+                 <div className="col-lg-6 p-3 " key={id} >
                       <a className="portfolio-item link-dark" target="blank" href="https://saponka.github.io/weather-channel/">
                           <div className="caption">
                               <div className="caption-content " >
@@ -27,9 +28,13 @@ const Projectos = () => {
                          <img className="img-fluid" src={project.img} alt="..." />
                      </a>
                </div> 
+               
             ))}
+            
            </div>
-      </div>    
+           
+      </div>   
+       
     </section>   
     </>
   )
