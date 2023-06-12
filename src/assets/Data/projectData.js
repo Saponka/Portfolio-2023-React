@@ -28,9 +28,9 @@ let itemData = {
     },
     {
         id:5,
-        name: "Typer 3000",
-        img:require("../Img/proyectos/typer3000.png"),
-        description:"Velocidad,Tiempo,Palabras Este Juego es para vos"
+        name: "Comix Zoom",
+        img:require("../Img/proyectos/comixZoom.png"),/* */
+        description:"App de fandome de comics"
     },
     {
         id:6,
@@ -40,9 +40,9 @@ let itemData = {
     },
     {
         id:7,
-        name: "Comix Zoom",
-        img:require("../Img/proyectos/comixZoom.png"),
-        description:"App de fandome de comics"
+        name: "Typer 3000",
+        img:require("../Img/proyectos/typer3000.png"),
+        description:" Velocidad,Tiempo,Palabras Este Juego es para vos"
     },
     {
         id:8,
