@@ -18,7 +18,7 @@ const Projectos = () => {
               <div className="row " >
                    {itemData.items.map((project,id)=>(
                  <div className="col-lg-6 p-3 " key={id} >
-                      <a className="portfolio-item link-dark" target="blank" href="https://saponka.github.io/weather-channel/">
+                      <a className="portfolio-item link-dark" target="blank" href={project.url}>
                           <div className="caption">
                               <div className="caption-content " >
                                    <div className="h2" >{project.name}</div>
