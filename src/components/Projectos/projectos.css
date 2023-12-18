@@ -8,6 +8,10 @@
     
     }
 
+    .img-fluid{
+      width: 520px;
+      height: 250px;
+    }
     
        .portfolio-item {
         display: block;
@@ -34,7 +38,7 @@
        
       }
     
-      @media (min-width: 592px) {
+      @media (min-width: 520px) {
         .portfolio-item {
           max-width: none;
         }
