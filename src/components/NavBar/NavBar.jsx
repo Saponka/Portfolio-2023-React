@@ -63,21 +63,21 @@ function meses(){
                       target="blank"
                       href="https://www.instagram.com/frankoherreraruiz/?hl=es-la"
                     >
-                      <i class="fa-brands fa-instagram fa-beat-fade fa-2xl" style={{color:" #f0056b"}}></i>
+                      <i class="fa-brands fa-instagram  fa-2xl" style={{color:" #f0056b"}}></i>
                     </a>
                     <a
                       className="rounded-circle text-white "
                       target="blank"
                       href="https://www.linkedin.com/feed/"
                     >
-                      <i class="fa-brands fa-linkedin fa-shake fa-2xl" style={{color:"#075ef2"}}></i>
+                      <i class="fa-brands fa-linkedin  fa-2xl" style={{color:"#075ef2"}}></i>
                     </a>
                     <a
                       className=" rounded-circle text-white"
                       target="_blank"
                       href="https://github.com/Saponka"
                     >
-                      <i class="fa-brands fa-github fa-2xl fa-flip"  /* style={{color:"purple"}} */></i>
+                      <i class="fa-brands fa-github fa-2xl "  /* style={{color:"purple"}} */></i>
                     </a>
                 </div>
                  <br />
