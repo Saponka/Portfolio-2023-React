@@ -55,9 +55,28 @@ const Projectos = () => {
                </div> 
                
             ))}
-            
-           </div>
-           
+           </div>   
+      </div>   
+      </section>  
+    <section className="content-section p-5" id="portfolio">
+    <div className="container px-4 px-lg-5" id="callout">
+          <h1 >Juegos</h1>
+              <div className="row " >
+                   {itemData.games.map((game,id)=>(
+                 <div className="col-lg-6 p-3 " key={id} >
+                      <a className="portfolio-item link-dark" target="blank" href={game.url}>
+                          <div className="caption" >
+                              <div className="caption-content " >
+                                   <div className="h2" >{game.name}</div>
+                                     <p className="mb-0 " >{game.description}</p>
+                             </div>
+                         </div>
+                         <img className="img-fluid" src={game.img} alt="..."  />
+                     </a>
+               </div> 
+               
+            ))}
+           </div>   
       </div>   
       </section>  
     </>
