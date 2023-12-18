@@ -2,13 +2,13 @@
 let itemData = {
 
     items:[
-    {
+  /*   {
         id:1,
         name: "Weather Channel",
         img:require('../Img/proyectos/weatherChannel.png'),
         description:"Aplicacion del clima,donde se consume una api con Ajax",
         url:"https://saponka.github.io/weather-channel/"
-    },
+    }, */
     {
         id:2,
         name: "Lista de Tareas",
@@ -51,26 +51,53 @@ let itemData = {
         description:" Velocidad,Tiempo,Palabras Este Juego es para vos",
         url:"https://typer3000.vercel.app/"
     },
+  
     {
         id:8,
-        name: "Video Games API",
-        img:require("../Img/proyectos/videoGames.png"),
-        description:"API REST de Video Juegos",
-        url:"https://video-games-delta.vercel.app/"
-    },
-    {
-        id:9,
         name: "Bonzai Tek ",
         img:require("../Img/proyectos/bonzayTek.png"),
         description:"Gestion de datos multiples(MERN stack)",
         url:"https://final-react-front.vercel.app/"
     },
     {
-        id:10,
+        id:9,
         name: "Vino Rojo Bodegon",
         img:require("../Img/proyectos/vinoRojo.png"),
         description:"E-commerce gastronomico (MERN stack)",
         url:"https://vino-rojo-bodegon.vercel.app/"
+    },
+    
+],
+
+apis:[
+    {
+        id:1,
+        name: "Weather Channel",
+        img:require('../Img/proyectos/weatherChannel.png'),
+        description:"Aplicacion del clima,donde se consume una api con Ajax",
+        url:"https://saponka.github.io/weather-channel/"
+    },
+    {
+        id:2,
+        name: "Rick and Morty API",
+        img:require("../Img/proyectos/RandM.png"),
+        description:"API REST de Rick and Morty",
+        url:"https://rick-and-morty-eight-delta.vercel.app/"
+
+    },
+    {
+        id:3,
+        name: "Video Games API",
+        img:require("../Img/proyectos/videoGames.png"),
+        description:"API REST de Video Juegos",
+        url:"https://video-games-delta.vercel.app/"
+    },
+    {
+        id:4,
+        name: "Movies API",
+        img:require("../Img/proyectos/videoGames.png"),
+        description:"API REST de Peliculas",
+        url:"https://movie-api-gold-seven.vercel.app/"
     },
 ]
 };
