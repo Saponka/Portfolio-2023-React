@@ -34,3 +34,10 @@
 .fecha{
   color:aqua;
 }
+.dropdown-menu {
+  background-color: black;
+}
+.dropdown-menu li {
+  color: antiquewhite;
+  padding-left: 5px;
+}

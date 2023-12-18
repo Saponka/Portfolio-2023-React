@@ -83,64 +83,42 @@ function meses(){
                  <br />
                 <li className="nav-item dropdown">
                    <a
-                    className="nav-link dropdown-toggle"
+                    className="nav-link dropdown-toggle "
                     href="#portfolio"
                     id="offcanvasNavbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    
                    >
-                    Proyectos
+                    Formacion
                    </a>
-                   <ul className="dropdown-menu dropdown-menu-dark"aria-labelledby="offcanvasNavbarDropdown">
+                   <ul className="dropdown-menu "aria-labelledby="offcanvasNavbarDropdown">
                     <li>
-                      <a className="dropdown-item" href="https://saponka.github.io/ColorGame/" target='_blank' >
-                        Color Game
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item"href="https://saponka.github.io/weather-channel/" target='_blank'>
-                        Weather Channel
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item"href="https://comixzoom.herokuapp.com/" target='_blank'>
-                        ComixZoom
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item"href="https://saponka.github.io/ListaTareas/" target='_blank'>
-                        Lista de Tareas
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item"href="https://typer3000.vercel.app/" target='_blank'>
-                        Typer 3000
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="https://video-games-delta.vercel.app/" target='_blank'>
-                        Video Games
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="https://vino-rojo-bodegon.vercel.app/" target='_blank'>
-                        Vino Rojo
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item"href="https://final-react-front.vercel.app/" target='_blank'>
-                        Bonzai Tek
-                      </a>
+                      UTN : FullStack Web Developer.
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
-                        Otras
-                      </a>
+                    Soy Henry : FullStack Web Developer.
                     </li>
+                    <li>
+                     Henry UpSkilling : MicroServicios.
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      Educacion IT : Maquetador Avanzado CSS,LESS y SASS.
+                    </li>
+                    <li>
+                     Educacion IT : Angular 13.
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    
                   </ul>
                 </li>
               </ul>
