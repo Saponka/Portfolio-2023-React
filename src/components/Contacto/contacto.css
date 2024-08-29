@@ -1,6 +1,6 @@
 #contacto{
     color:rgb(147, 2, 244);
-    font-family: "Splash";
+    font-family: Zen Dots;
     font-size: 3rem;
    
   }
@@ -8,7 +8,7 @@
    .boton2 {
      font-family: "Zen Dots";
      padding: 0.6em 2em;
-     border: none;
+     border: 2px solid rebeccapurple;
      outline: none;
      color: rgb(255, 255, 255);
      background: #111;
@@ -18,7 +18,7 @@
      border-radius: 10px;
    }
    /* CSS  fondo luminoso para el boton*/
-   .boton2:before {
+   /* .boton2:before {
      content: "";
      background: linear-gradient(
        45deg,
@@ -46,7 +46,8 @@
      animation: glowing-boton2 20s linear infinite;
      transition: opacity 0.3s ease-in-out;
      border-radius: 10px;
-   }
+   } */
+
    /* CSS  animacion de fondo*/
    @keyframes glowing-boton2 {
      0% {
@@ -60,7 +61,7 @@
      }
    }
    /* css animacion  */
-   .boton2:after {
+   /* .boton2:after {
      z-index: -1;
      content: "";
      position: absolute;
@@ -70,8 +71,10 @@
      left: 0;
      top: 0;
      border-radius: 10px;
-   }
+   } */
    
   .boton2:hover{
     color: #00ffd5;
+   border:2px solid #00ffd5;
+   
   }

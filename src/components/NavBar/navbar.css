@@ -1,7 +1,9 @@
 .offcanvas{
-    background-color: #5c258d;;
+    background-color: #080808;;
   }
-
+.btn-close{
+  background-color: antiquewhite;
+}
   .controls  .ligth {
     display: none; 
     border-radius: 10px; 
@@ -33,9 +35,10 @@
 
 .fecha{
   color:aqua;
+  margin-bottom: 0;
 }
 .dropdown-menu {
-  background-color: black;
+  background-color: rgb(57, 197, 155);
 }
 .dropdown-menu li {
   color: antiquewhite;

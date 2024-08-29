@@ -10,14 +10,18 @@ footer.footer {
     width: 4rem;
     line-height: 4.3rem;
     font-size: 1.5rem;
-    background-color: #11af8d;
-    transition: background-color 0.15s ease-in-out;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    background-color: #020202;
+    /* transition: background-color 0.15s ease-in-out;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1); */
   }
   footer.footer .social-link:hover {
-    background-color: #17bc77;
+    background-color: rgb(253, 252, 253);
     text-decoration: none;
+    #github{
+      color: black;
+    }
   }
+  /*  */
   #foot {
     font-family:'Libre Barcode 128 Text' ;
      font-size: 3rem;

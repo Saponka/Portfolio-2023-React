@@ -18,7 +18,7 @@ const Footer = () => {
                     <a className="social-link rounded-circle text-white mr-3" target="blank"href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin fa-xl" style={{color:"#075ef2"}}></i></a>
                 </li>
                 <li className="list-inline-item">
-                    <a className="social-link rounded-circle text-white" target="blank" href="https://github.com/Saponka"><i class="fa-brands fa-github fa-xl "   style={{color:"black"}}></i></a>
+                    <a className="social-link rounded-circle "  target="blank" href="https://github.com/Saponka"><i class="fa-brands fa-github fa-xl " id='github'  /* style={{color:"white"}} */></i></a>
                 </li>
             </ul>}
             <p id="foot" className=" small mb-0" > Franco Herrera Ruiz {date.getFullYear()}</p>
