@@ -40,7 +40,7 @@
     /*  animation: glowing-img 1s  linear infinite;  */
     /*  animation-timing-function: ease-in-out; */
     /*  animation-timing-function: cubic-bezier(0.1, 0.7, 4, 0.1); */
-    box-shadow: 0px 0px 2px 2px rgb(31 244 185), 5px 5px 38px #9a00ff;
+    box-shadow: 0px 0px 1px 1px rgb(31 244 185), 5px 5px 38px #9a00ff;
   
    }
 
@@ -70,7 +70,7 @@
    }
   
    .descripcion{
-    color: rgb(120, 21, 233);
+    color: rgb(31 244 185);
     font-size: 22px;
     font-family: "Zen Dots";/* Teko */
    }
