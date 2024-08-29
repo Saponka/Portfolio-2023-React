@@ -23,6 +23,13 @@ let itemData = {
             description:" Velocidad,Tiempo,Palabras Este Juego es para vos",
             url:"https://typer3000.vercel.app/"
         },
+        {
+            id:4,
+            name: "The Fastest racer",
+            img:require("../Img/proyectos/Sin título.png"),
+            description:" Juego de Velocidad y Autos",
+            url:"https://kosmik-race.vercel.app/"
+        },
       
     ],
 
