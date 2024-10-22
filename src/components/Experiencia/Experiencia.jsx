@@ -68,16 +68,16 @@ const Experiencia = () => {
             </div>
             <div className="content-section-heading">
                 <h2 className="mb-1 mt-5">Estrategias y buenas prácticas</h2> <br />
-                 <h4 className='mt-3'>Nombres descriptivos</h4> 
-                Utilizar nombres de variables, funciones y clases que sean descriptivos y claros. <br />
-                <h4 className='mt-3 mb-1'>Revisión de código</h4> 
-                Revisiones entre pares para garantizar que el código cumpla con lo establecido. <br />
-                <h4 className='mt-3 mb-1'>Refactorización constante</h4> 
-                Simplificar lógicas complejas mediante refactorización del código <br />
-                <h4 className='mt-3 mb-1'>Divide and Conquer</h4> 
-                dividir un problema en problemas más pequeños y manejables. <br />
-                <h4 className='mt-3 mb-1'>Versionado del código</h4> 
-                Utilizar sistemas de control de versiones como Git para rastrear y gestionar cambios en el código.
+                 <h5 className='mt-3'>Nombres descriptivos</h5> 
+                <p>Utilizar nombres de variables, funciones y clases que sean descriptivos y claros.</p> <br />
+                <h5 className=' mb-1'>Revisión de código</h5> 
+               <p> Revisiones entre pares para garantizar que el código cumpla con lo establecido.</p> <br />
+                <h5 className=' mb-1'>Refactorización constante</h5> 
+                <p>Simplificar lógicas complejas mediante refactorización del código.</p> <br />
+                <h5 className=' mb-1'>Divide and Conquer</h5> 
+                <p>Dividir un problema en problemas más pequeños y manejables.</p> <br />
+                <h5 className=' mb-1'>Versionado del código</h5> 
+                <p>Utilizar sistemas de control de versiones como Git para rastrear y gestionar cambios en el código.</p>
             
 
                 

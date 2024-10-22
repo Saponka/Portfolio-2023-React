@@ -24,7 +24,7 @@ function meses(){
 
   return (
     <>
-      <nav className="navbar navbar-dark fixed-top" style={{boxShadow: "5px 0px 15px #00BCD4",backgroundColor:"black"}}>
+      <nav className="navbar navbar-dark fixed-top" style={{boxShadow: "5px 0px 15px #00BCD4",backgroundColor:"rgb(225 83 18)"}}>
         <div className="container-fluid">
           {/* <a className="navbar-brand " href="#">  </a> */}
           <p className='fecha'>  <span>{diasEnString()}</span> <span>{fecha}</span> <span>{meses()}</span> <span>{año}</span></p>
@@ -42,7 +42,7 @@ function meses(){
             tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
-            style={{boxShadow: "-3px 0px 10px #00BCD4"}}
+            style={{boxShadow: "-1px 0px 7px #00BCD4"}}
           >
             <div className="offcanvas-header">
                <button
@@ -57,7 +57,7 @@ function meses(){
                 <ul className="navbar-nav justify-content-end  pe-3">
                     
                     <li className="nav-item">
-                  <p style={{color:"aqua"}}>  Formación</p>
+                  <p style={{color:"rgb(225 83 18)",fontSize:"20px"}}>  Formación</p>
                 </li>
               </ul>
 
@@ -71,6 +71,7 @@ function meses(){
     </h2>
     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body"> FullStack Web Developer <br />
+      Diplomatura en Python (Cursando) 
        <br />
       
       </div>
@@ -123,7 +124,7 @@ function meses(){
                       className="nav-link active"
                       aria-current="page"
                     >
-                      <button type="button" className="btn btn-outline-info">
+                      <button type="button" className="btn btn-outline-danger">
                         <span className="icon">
                           <i className="fas fa-download"></i>
                         </span>
