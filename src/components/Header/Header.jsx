@@ -24,14 +24,18 @@ const Header = () => {
             <h2 className="lead mb-5 descripcion animate__animated animate__backInUp animate__delay-3s animate__slow">
               Soy Franco Herrera Ruiz de Río Cuarto, Córdoba, Argentina.
               <br />
-              Actualmente soy Desarrollador Web FullStack y Chef Profesional.
+              Considero que siempre hay problemas y soluciones para aprender ante un
+              desafio
+              <br /> 
+              continuar con la formacion es fundamental, para poder acceder y manejar diferentes lenguajes y tecnologias.
               <br />
-              Mi meta es continuar en mi formacion como programador,
-              <br /> para acceder y manejar diferentes lenguajes.
-              <br />
-              Considero que siempre hay algo para hacer y aprender ante un
-              desafio.
+              Mi meta es desarrollar código entendible, extensible, escalable y reusable 
+              <br /> 
+              lo que es esencial para mantener un proyecto de software saludable a lo largo del tiempo.
+              
+              <br />   
             </h2>
+            
           </div>
         </div>
       </section>

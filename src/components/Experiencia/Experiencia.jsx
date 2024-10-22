@@ -17,7 +17,7 @@ const Experiencia = () => {
       <section className="content-section  text-white text-center p-5" id="services">
         <div className="container px-4 px-lg-5">
             <div className="content-section-heading">
-                <h2 className="mb-5">Experiencia</h2>
+                <h2 className="mb-5">Tecnologias</h2>
             </div>
             <div className="row gx-4 gx-lg-5 p-5">
                 <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -63,6 +63,24 @@ const Experiencia = () => {
                     <h4><em>React</em></h4>
                     <p className="text-faded mb-0"> Biblioteca JS para crear interfaces de usuario,desarrollo SPA.</p>
                 </div>
+            </div>
+            <div className="content-section-heading">
+                <h2 className="mb-5">Estrategias y buenas prácticas</h2> <br />
+                Nombres descriptivos <br />
+                Utilizar nombres de variables, funciones y clases que sean descriptivos y claros. <br />
+                Revisión de código <br />
+                Revisiones entre pares para garantizar que el código cumpla con lo establecido. <br />
+                Refactorización constante <br />
+                Simplificar lógicas complejas mediante refactorización del código <br />
+                Divide and Conquer <br />
+                dividir un problema en problemas más pequeños y manejables. <br />
+                Versionado del código <br />
+                Utilizar sistemas de control de versiones como Git para rastrear y gestionar cambios en el código.
+            
+
+                
+
+
             </div>
           </div>
         
