@@ -9,6 +9,8 @@ import computer from "../../assets/Img/svg/computer-coding-svgrepo-com.svg"
 import angular from "../../assets/Img/svg/angular-icon-logo-svgrepo-com.svg"
 import bootstrap  from "../../assets/Img/svg/bootstrap-fill-svgrepo-com.svg"
 
+import "./tecnologias.css"
+
 
 const Experiencia = () => {
   return (
@@ -65,16 +67,16 @@ const Experiencia = () => {
                 </div>
             </div>
             <div className="content-section-heading">
-                <h2 className="mb-5">Estrategias y buenas prácticas</h2> <br />
-                Nombres descriptivos <br />
+                <h2 className="mb-1 mt-5">Estrategias y buenas prácticas</h2> <br />
+                 <h4 className='mt-3'>Nombres descriptivos</h4> 
                 Utilizar nombres de variables, funciones y clases que sean descriptivos y claros. <br />
-                Revisión de código <br />
+                <h4 className='mt-3 mb-1'>Revisión de código</h4> 
                 Revisiones entre pares para garantizar que el código cumpla con lo establecido. <br />
-                Refactorización constante <br />
+                <h4 className='mt-3 mb-1'>Refactorización constante</h4> 
                 Simplificar lógicas complejas mediante refactorización del código <br />
-                Divide and Conquer <br />
+                <h4 className='mt-3 mb-1'>Divide and Conquer</h4> 
                 dividir un problema en problemas más pequeños y manejables. <br />
-                Versionado del código <br />
+                <h4 className='mt-3 mb-1'>Versionado del código</h4> 
                 Utilizar sistemas de control de versiones como Git para rastrear y gestionar cambios en el código.
             
 

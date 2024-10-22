@@ -18,14 +18,16 @@ code {
     box-sizing: border-box;
     font-family: Rubik, calibri, sans-serif;
   }
+
    /* Experiencia */
-   #services h2{
+
+/*    #services h2{
     color:rgb(11, 250, 238);
      font-family: "Zen Dots";
      font-size: 2rem;
     -webkit-text-stroke: 0.5px rgb(147, 2, 244);
   
-  }
+  } */
 
 
   /* navbar */
