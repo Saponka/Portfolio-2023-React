@@ -1,10 +1,10 @@
 
 
 #callout h1{
-    color:rgb(11, 250, 238);
+    color:rgb(218, 98, 18);
     font-family: "Zen Dots";
     font-size: 2rem;
-    -webkit-text-stroke: 0.5px rgb(147, 2, 244);
+    /* -webkit-text-stroke: 0.5px rgb(147, 2, 244); */
     
     }
 
@@ -22,8 +22,8 @@
         text-decoration: none;
         color: rgba(255, 251, 7, 0);
         border-radius: 10px; 
-         box-shadow:  5px 1px 10px rgb(11, 250, 238);
-         box-shadow: rgba(179, 46, 240, 0.4) -5px 5px, rgba(179, 46, 240, 0.3) -10px 10px, rgba(179, 46, 240, 0.2) -15px 15px, rgba(179, 46, 240, 0.1) -20px 20px, rgba(179, 46, 240, 0.05) -25px 25px;
+         box-shadow:  5px 1px 10px rgb(218, 98, 18);
+         box-shadow: rgba(218, 98, 18, 0.63) -5px 5px, rgba(218, 98, 18, 0.3) -10px 10px, rgba(218, 98, 18, 0.2) -15px 15px, rgba(218, 98, 18, 0.1) -20px 20px, rgba(218, 98, 18, 0.05) -25px 25px;
       }
 
        .portfolio-item .caption {
@@ -72,7 +72,7 @@
                   
         }
         .portfolio-item:hover .caption  {
-          background-color: rgb(182, 11, 250);
+          background-color: rgba(218, 98, 18, 0.950);;
           
           -webkit-opacity: inset(2rem);
                   opacity: outset(2rem);    /* ojo */
