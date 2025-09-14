@@ -102,17 +102,6 @@ function meses(){
     </div>
   </div>
 </div>
-
-      {/*         <ul class="list-group">
-  <li class="list-group-item">Formacion</li>
-
-  <li class="list-group-item list-group-item-primary">UTN : FullStack Web Developer</li>
-  <li class="list-group-item list-group-item-dark">Soy Henry : FullStack Web Developer.</li>
-  <li class="list-group-item list-group-item-success">Henry UpSkilling : MicroServicios.</li>
-  <li class="list-group-item list-group-item-danger">Educacion IT : Maquetador Avanzado CSS,LESS y SASS.</li>
-  <li class="list-group-item list-group-item-light">Educacion IT : Angular 13.</li>
-
-</ul> */}
             </div>
             <div>
               <div>

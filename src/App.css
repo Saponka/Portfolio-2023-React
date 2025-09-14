@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   /* background-color: rgb(0, 0, 0); */
-  background: #1a2a6c;  /* fallback for old browsers */
+  background: black;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom,  #2c2d50, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom,  #2c2d50, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
