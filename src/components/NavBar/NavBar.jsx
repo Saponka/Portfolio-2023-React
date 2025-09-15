@@ -24,7 +24,7 @@ function meses(){
 
   return (
     <>
-      <nav className="navbar navbar-dark fixed-top" style={{boxShadow: "5px 0px 15px #00BCD4",backgroundColor:"rgb(225 83 18)"}}>
+      <nav className="navbar navbar-dark fixed-top" style={{boxShadow: "5px 0px 15px #00BCD4",backgroundColor:"black"}}>
         <div className="container-fluid">
           {/* <a className="navbar-brand " href="#">  </a> */}
           <p className='fecha'>  <span>{diasEnString()}</span> <span>{fecha}</span> <span>{meses()}</span> <span>{año}</span></p>
@@ -57,7 +57,7 @@ function meses(){
                 <ul className="navbar-nav justify-content-end  pe-3">
                     
                     <li className="nav-item">
-                  <p style={{color:"rgb(225 83 18)",fontSize:"20px"}}>  Formación</p>
+                  <p style={{color:"#00BCD4",fontSize:"20px"}}>  Formación</p>
                 </li>
               </ul>
 
