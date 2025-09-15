@@ -4,6 +4,7 @@
     grid-template-rows: 400px ;
     align-items: center;
     margin-top: 25px;
+    background-color: black;
    }
   .nombre{
      color: #00BCD4;
@@ -40,7 +41,7 @@
     /*  animation: glowing-img 1s  linear infinite;  */
     /*  animation-timing-function: ease-in-out; */
     /*  animation-timing-function: cubic-bezier(0.1, 0.7, 4, 0.1); */
-    box-shadow: 0px 0px 1px 1px rgb(3, 79, 192), 5px 5px 38px rgb(218, 98, 18);
+    box-shadow: 0px 0px 1px 1px #00BCD4, 5px 5px 38px rgb(218, 98, 18);
   
    }
 
